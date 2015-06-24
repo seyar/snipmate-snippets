@@ -1,0 +1,2 @@
+# snipmate-snippets
+Javascript
