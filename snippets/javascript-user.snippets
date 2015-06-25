@@ -3,7 +3,7 @@
 #
 
 # Describe
-snippet des
+snippet de
 	describe('${1:description}', function () {
 
 		${2}
@@ -26,10 +26,6 @@ snippet bef
 	beforeEach(function () {
 		${1}
 	});
-
-# Any
-snippet any
-	jasmine.any(${1})
 
 # Expect not to be defined
 snippet notd
@@ -140,3 +136,61 @@ snippet s
 # Waits
 snippet wa
 	waits(${1});${2}
+
+# ternar operator
+snippet ?
+	${1} = (${2:condition}) ? ${2} : ${3}
+
+# .then
+snippet .then
+	.then(function () {
+    		${1}
+	})
+
+# function
+snippet f
+	function (${1:param}) {
+    		${2}
+	}
+
+# module exports
+snippet mod
+	module.exports = ${1};
+	
+# require
+snippet re
+	var ${1:module} = require('${1:module}');
+	
+# return
+snippet rt
+	return ${1}
+
+# switch
+snippet sw
+	switch (${1}) {
+		case ${2}:
+    			${4}
+    			break;
+		case ${3}:
+		
+# throw error
+snippet th
+	throw new Error('${1}');
+	
+# try catch
+snippet try
+	try {
+    		${1}
+	} catch (err) {
+		
+	}
+	
+# console log
+snippet cd
+	console.log('${1}::${2}()');
+	
+# console
+snippet cl
+	console.log('${1:name}');
+	
+	
