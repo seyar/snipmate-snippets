@@ -159,11 +159,11 @@ snippet mod
 	
 # require
 snippet re
-	var ${1:module} = require('${1:module}');
+	var ${1:module} = require('${2:${1}}');
 	
 # return
 snippet rt
-	return ${1}
+	return ${0:result};
 
 # switch
 snippet sw
@@ -176,21 +176,3 @@ snippet sw
 # throw error
 snippet th
 	throw new Error('${1}');
-	
-# try catch
-snippet try
-	try {
-    		${1}
-	} catch (err) {
-		
-	}
-	
-# console log
-snippet cd
-	console.log('${1}::${2}()');
-	
-# console
-snippet cl
-	console.log('${1:name}');
-	
-	
